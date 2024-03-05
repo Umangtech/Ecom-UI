@@ -2,8 +2,8 @@ import React from "react";
 
 function Header() {
   return (
-    <div>
-      <h1>Welcome to Courses Application.</h1>
+    <div className="text-center ">
+      <h1 className="display-4">Welcome to Ecommerce Application.</h1>
     </div>
   );
 }

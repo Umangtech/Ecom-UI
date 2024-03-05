@@ -1,12 +1,12 @@
 import React from "react";
+// import AllProduct from "./AllProduct";
+// import CardComponent from "./CardComponent";
 // import { Jumbotron } from "reactstrap";
 
 function Home() {
   return (
-    <div>
-      {/* <Jumbotron> */}
-      <h1 className="display-2">You are in the Home Page!</h1>
-      {/* </Jumbotron> */}
+    <div className="text-center">
+      <h1 className="display-6">You are in the Home Page!</h1>
     </div>
   );
 }
