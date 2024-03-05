@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import Header from "./compoents/Header";
+import { Button } from "reactstrap";
+import { ToastContainer, toast } from "react-toastify";
+import Home from "./compoents/Home";
 
 function App() {
+  const notificationHandle = () => {
+    toast("Notification Handler");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ToastContainer />
+      <Home />
+      <Button outline color="primary" onClick={notificationHandle}>
+        Click here
+      </Button>
     </div>
   );
 }
